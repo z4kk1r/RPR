@@ -1,0 +1,19 @@
+#bcgr {
+-fx-background-color: #F5F5F5;
+}
+
+.button{
+-fx-background-color: #D0F288;
+-fx-text-fill: #333333;
+}
+
+#gridPane{
+    -fx-border-color:#DDF2FD;
+}
+
+#result{
+-fx-background-color: #FFFFE0;
+-fx-text-fill: #000000;
+}
+
+/* Add more styles as needed */
