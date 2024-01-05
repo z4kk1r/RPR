@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="211.0" prefWidth="397.0" stylesheets="@../../../../css/drzava.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.DrzavaController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="10.0" prefWidth="115.59999618530274" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="505.00001525878906" minWidth="10.0" prefWidth="250.40000381469724" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="246.0" minHeight="10.0" prefHeight="72.40000000000002" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="203.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ButtonBar prefHeight="57.0" prefWidth="372.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <buttons>
+            <Button fx:id="btnOK" minWidth="74.0" mnemonicParsing="false" onAction="#confirm" prefHeight="26.0" prefWidth="578.0" text="OK" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+        </buttons>
+         <GridPane.margin>
+            <Insets right="15.0" />
+         </GridPane.margin>
+      </ButtonBar>
+      <Label prefHeight="22.0" prefWidth="62.0" text="Naziv:" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin></Label>
+      <Label text="Glavni grad:" textAlignment="RIGHT" GridPane.rowIndex="1">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin></Label>
+      <ChoiceBox fx:id="choiceGrad" prefHeight="26.0" prefWidth="165.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="fieldNaziv" prefHeight="26.0" prefWidth="288.0" GridPane.columnIndex="1" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</GridPane>

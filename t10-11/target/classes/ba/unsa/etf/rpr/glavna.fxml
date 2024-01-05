@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.GlavnaController">
+   <children>
+      <TableView fx:id="TableViewGradovi" onMouseEntered="#dragNaTable" onMouseExited="#dragVanTable" prefHeight="400.0" prefWidth="478.0" HBox.hgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="colGradId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colGradNaziv" prefWidth="108.20001220703125" text="Naziv" />
+            <TableColumn fx:id="colGradBrStanovnika" prefWidth="122.19999694824219" text="Br_Stanovnika" />
+            <TableColumn fx:id="colGradDrzava" minWidth="70.0" prefWidth="161.0" text="Drzava" />
+        </columns>
+      </TableView>
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="147.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Button fx:id="btnDodajGrad" mnemonicParsing="false" onAction="#otvoriGradFormu" onMouseEntered="#dragNaTable" onMouseExited="#dragVanTable" prefHeight="26.0" prefWidth="103.0" text="Dodaj grad" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnDodajDrzavu" mnemonicParsing="false" onAction="#otvoriDrzavaFormu" onMouseEntered="#dragNaTable" onMouseExited="#dragVanTable" prefHeight="26.0" prefWidth="103.0" text="Dodaj drzavu" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnIzmijeniGrad" mnemonicParsing="false" onAction="#otvoriGradFormu" onMouseEntered="#dragNaTable" onMouseExited="#dragVanTable" prefHeight="26.0" prefWidth="103.0" text="Izmijeni grad" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnObrisiGrad" alignment="CENTER" mnemonicParsing="false" onAction="#obrisiGrad" onMouseEntered="#dragNaTable" onMouseExited="#dragVanTable" prefHeight="26.0" prefWidth="103.0" text="Obrisi grad" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnRefresh" alignment="CENTER" mnemonicParsing="false" onAction="#refresh" onMouseEntered="#dragNaTable" onMouseExited="#dragVanTable" prefHeight="26.0" prefWidth="103.0" text="Refresh">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </children>
+</HBox>
